@@ -5,12 +5,9 @@ const About = () => {
   return (
     <div className="about-container">
       {/* анимация */}
-      <motion.h1
-        whileHover={{ x: 100 }}
-        transition={{ type: "spring", stiffness: 200 }}
-      >
+      <h1 className="hover-move">
         About the company
-      </motion.h1>
+      </h1>
 
       <p>
         The company "Book" is a modern bookstore offering a wide range of literature for all ages and interests. We strive to make reading accessible and enjoyable for every customer, whether a lover of classics, a fan of contemporary bestsellers, or a parent looking for quality books for children.

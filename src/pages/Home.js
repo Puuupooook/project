@@ -8,7 +8,7 @@ import book4 from "../assets/book4.png";
 import book5 from "../assets/book5.png";
 import book6 from "../assets/book6.png";
 
-import { motion } from "framer-motion";
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 const slides = [
 {
@@ -120,21 +120,13 @@ return (
 
 {/* анимация */}
 <div className="row">
-<motion.div
-className="card"
-whileHover={{ scale: 1.1 }}
-transition={{ type: "spring", stiffness: 300 }}
->
-An easy way to<br />please your friends...
-</motion.div>
+  <div className="card hover-scale">
+    An easy way to<br />please your friends...
+  </div>
 
-<motion.div
-className="card"
-whileHover={{ scale: 1.1 }}
-transition={{ type: "spring", stiffness: 300 }}
->
-Books of this month
-</motion.div>
+  <div className="card hover-scale">
+    Books of this month
+  </div>
 </div>
 
 <div className="randomizer-container">

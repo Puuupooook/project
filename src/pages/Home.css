@@ -98,20 +98,27 @@ gap: 40px;
 margin: 40px 216px 0 216px;
 }
 
+/* анимация */
 .card {
-flex: 1;
-background: #b8e0f6;
-border-radius: 8px;
-padding: 60px 40px;
-font-size: 2em;
-color: #000000;
-display: flex;
-align-items: center;
-justify-content: center;
-min-height: 120px;
+  flex: 1;
+  background: #b8e0f6;
+  border-radius: 8px;
+  padding: 60px 40px;
+  font-size: 2em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center center;
 }
 
+.card.hover-scale:hover {
+  transform: scale(1.1);
+}
 
+/* конец анимации */
 .randomizer-container {
 margin: 60px 216px 40px 216px;
 background: #fff;

@@ -33,6 +33,18 @@
   margin-bottom: 12px;
 }
 
+
+/* Анимация */
+
+.hover-move {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1); 
+}
+
+.hover-move:hover {
+  transform: translateX(100px);
+}
+
 /* оптимизация */
 
 @media (max-width: 1200px) {
