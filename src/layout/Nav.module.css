@@ -1,0 +1,126 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.navbarWrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 0 216px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 48px;
+}
+
+.navCenter {
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: center;
+  font-size: 20pt;
+}
+
+.iconButton {
+  background-color: #cce6ff;
+  border: none;
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 48px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .navbarWrapper {
+    padding: 0 40px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    height: 32px;
+    margin-right: 24px;
+  }
+
+  .navCenter {
+    gap: 16px;
+    font-size: 16pt;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  .iconButton {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .navbar {
+    row-gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbarWrapper {
+    padding: 0 16px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 8px;
+  }
+
+  .logo {
+    height: 30px;
+    margin-right: 24px;
+  }
+
+  .navCenter {
+    gap: 12px;
+    font-size: 14pt;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .navItem {
+    font-size: 20px;
+  }
+
+  .iconButton {
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+  }
+}

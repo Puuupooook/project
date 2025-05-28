@@ -1,0 +1,135 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  width: 320px;
+  margin: 40px auto;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback-label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.feedback-input,
+.feedback-textarea,
+.feedback-select {
+  padding: 8px;
+  border: 1px solid #1d3557;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.feedback-textarea {
+  resize: vertical;
+}
+
+.feedback-error {
+  color: rgb(255, 0, 0);
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 6px;
+}
+
+.feedback-result {
+  margin-top: 12px;
+  padding: 12px;
+  background: #e0ffe0;
+  border: 1px solid rgb(0, 255, 0);
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.feedback-button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1d3557;
+  color: white;
+}
+
+.feedback-button:hover {
+  background-color: #184c72;
+}
+
+/* оптимизация */
+
+@media (max-width: 992px) {
+  .feedback-container {
+    width: 80%;
+    padding: 20px 24px;
+    margin: 32px auto;
+    gap: 24px;
+  }
+
+  .feedback-label {
+    font-size: 13px;
+  }
+
+  .feedback-input,
+  .feedback-textarea,
+  .feedback-select {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .feedback-button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .feedback-result {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-container {
+    width: 90%;
+
+    padding: 20px 24px;
+    margin: 32px auto;
+    gap: 24px;
+  }
+
+  .feedback-label {
+    font-size: 15px;
+  }
+
+  .feedback-input,
+  .feedback-textarea,
+  .feedback-select {
+    font-size: 15px;
+
+  }
+
+  .feedback-button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .feedback-result {
+    font-size: 15px;
+  }
+}
